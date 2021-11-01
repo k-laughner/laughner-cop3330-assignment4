@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="552.0" prefWidth="838.0" style="-fx-background-color: #100c27;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="26.0" prefHeight="526.0" prefWidth="266.0" style="-fx-background-color: #edebf9; -fx-border-color: grey;">
+         <children>
+            <ListView fx:id="listOfLists" layoutX="14.0" layoutY="102.0" prefHeight="341.0" prefWidth="243.0" />
+            <TextField fx:id="name" layoutX="16.0" layoutY="72.0" prefHeight="25.0" prefWidth="191.0" />
+            <Button id="newList" layoutX="214.0" layoutY="73.0" mnemonicParsing="false" style="-fx-background-color: #dcd8f3;" text="Add" textFill="#302380">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="60.0" layoutY="19.0" opacity="0.66" text="TO-DO LISTS" textFill="#100c27">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <Button id="newList" layoutX="203.0" layoutY="449.0" mnemonicParsing="false" style="-fx-background-color: #100c27;" text="Delete" textFill="#dad4ff">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="newList" layoutX="15.0" layoutY="449.0" mnemonicParsing="false" style="-fx-background-color: #100c27;" text="Edit" textFill="#dad4ff">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button id="newList" fx:id="editList1" layoutX="60.0" layoutY="449.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Stop Editing" textFill="#dad4ff">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="100.0" fill="WHITE" layoutX="565.0" layoutY="76.0" opacity="0.36" startX="-100.0" stroke="WHITE" style="-fx-fill: white;" />
+      <Button layoutX="643.0" layoutY="109.0" mnemonicParsing="false" style="-fx-background-color: #dcd8f3;" text="Mark as Complete" textFill="#302380">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="772.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: #dcd8f3;" text="Delete" textFill="#302380">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="786.0" layoutY="503.0" mnemonicParsing="false" style="-fx-background-color: #dcd8f3;" text="Add" textFill="#302380">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="title" fill="WHITE" layoutX="509.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List Viewer" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <TextField layoutX="269.0" layoutY="502.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField layoutX="451.0" layoutY="502.0" prefHeight="25.0" prefWidth="86.0" />
+      <TextField layoutX="541.0" layoutY="502.0" prefHeight="25.0" prefWidth="236.0" />
+      <MenuBar opacity="0.78" prefHeight="27.0" prefWidth="838.0" style="-fx-background-color: white; -fx-border-color: light grey;">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Save Current List" />
+                  <MenuItem mnemonicParsing="false" text="Save All Lists" />
+                  <MenuItem mnemonicParsing="false" text="Open List" />
+                  <MenuItem mnemonicParsing="false" text="Open Lists" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Tips" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Line endX="100.0" fill="#100c27" layoutX="126.0" layoutY="78.0" opacity="0.36" startX="-100.0" stroke="#100c27" style="-fx-fill: black;" />
+      <Button id="newList" layoutX="332.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Edit" textFill="#dad4ff">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <MenuButton layoutX="269.0" layoutY="109.0" mnemonicParsing="false" text="Sort">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Complete" />
+          <MenuItem mnemonicParsing="false" text="Incomplete" />
+            <MenuItem mnemonicParsing="false" text="All" />
+        </items>
+      </MenuButton>
+      <Button id="newList" fx:id="editList11" layoutX="379.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: grey;" text="Stop Editing" textFill="#dad4ff">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <ListView layoutX="271.0" layoutY="144.0" prefHeight="332.0" prefWidth="554.0" />
+      <Text fx:id="title1" fill="WHITE" layoutX="271.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="title11" fill="WHITE" layoutX="451.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Date" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="title111" fill="WHITE" layoutX="541.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="123.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

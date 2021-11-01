@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App {
++main( String[] args ) : void
++start ( Stage ) : void
+}
+class fileManagement {
++createFile( String ) : void
++appendFile( String, String, String, String, String ) : void
++updateStatus( String, String, String, String ) : String
++wipeFile( String ) : void
++edit( String, String, String ) : String
++renameFile( String, String ) : void
+}
+class Controller {
+    -FXML TextField listName
+    -FXML TextField task
+    -FXML TextField dueDate
+    -FXML TextField description
+    -FXML ListView listOfLists
+    -FXML ListView listOfItems
+    +addAList() : void
+    +deleteAList() : void
+    +editListName() : void
+    +stopEditListName() : void
+    +addListItem() : void
+    +deleteListItem() : void
+    +markComplete() : void
+    +editListItem() : void
+    +stopEditListItem() : void
+    +sortListItems() : void
+    +uploadList() : void
+    +uploadMultipleLists() : void
+    +showItems() : void
+    +saveSelectedList() : void
+    +saveAllLists() : void
+}
+
+@enduml

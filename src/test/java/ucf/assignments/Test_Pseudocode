@@ -1,0 +1,24 @@
+Class AppTest
+    method editTest
+        String replaceContent = edit(listTest, "old content", "new content")
+        String replaceChecker = "new content"
+        if replaceContent is the same as replaceChecker, test is passed
+    method updateStatusTest
+        String updated = updateStatus(listTest, "task", "due", "desc")
+        String check = "task,due,desc,yes"
+        if updated is the same as check, test is passed
+    method listCountTest
+        add 100 lists to list view listOfLists
+        if listOfLists has 100 entries
+            String met = true
+        else
+            String met = false
+        pass test if String met = true
+    method listItemsCountTest
+        add 100 items to listView listOfItems
+        if listOfItems has 100 entries
+            String met = true
+        else
+            String met = false
+        pass test if String met = true
+
