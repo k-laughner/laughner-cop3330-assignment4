@@ -1,4 +1,12 @@
 Class AppTest
+    method createFileTest
+        createFile("testFile");
+        if testFile exists then test is passed
+    method appendFileTest
+        appendFile(listTest, "task", "dueDate", "description", "status")
+        String content = content of listTest file
+        String checkingContent = "task,dueDate,description,status"
+        if checkingContent and content are the same then test is passed
     method editTest
         String replaceContent = edit(listTest, "old content", "new content")
         String replaceChecker = "new content"
